@@ -18,7 +18,10 @@ import lombok.NoArgsConstructor;
 public class Progreso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int rutEstudiante;
+    private int idEstudiante;
+
+    @Column(nullable = false)
+    private String rutEstudiante;
 
     @Column(nullable = false)
     private String NombreEstudiante;
